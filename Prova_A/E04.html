@@ -7,10 +7,23 @@
     */
 
     //Entrada
+    let investimento = Number(prompt(`informe o valor do investimento`))
+    const investido = investimento
 
+    let Juros = Number(prompt(`me informe taxa de juros mensal`))                            
+    let TempoInvestido = Number(prompt(`me informe o tempo que deseja ficar investindo`))
+    let resultado = "";
 
     //Processamento
 
+    for (let i = 1; i <= TempoInvestido; i++) {
+        resultado = investimento *= ((Juros/100) + 1)
+    }
+
+    //Saída
+
+
+    document.write(`R$ ${investido}, com uma taxa de juros de ${Juros}%, o resultado sera ${resultado.toFixed(2)}`)
 
     //Saída
 

@@ -9,11 +9,23 @@
     */
 
     //Entrada
-
-
+    let listanumeros = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let grupo1 = [];
+    let grupo2 = [];
+ 
     //Processamento
-
+    const numero = Number(prompt('Informe um número inteiro:'));
+    for (let i = 0; i < listanumeros.length; i++){
+        if(listanumeros[i] <= numero){
+            grupo1.push(listanumeros[i])
+        }
+        else if(listanumeros[i] > numero){
+            grupo2.push(listanumeros[i])
+        }
+       
+    }
 
     //Saída
+    document.write(`Grupo 1 = ${grupo1.join(", ")} <br> Grupo 2 = ${grupo2.join(", ")}`)
 
 </script>

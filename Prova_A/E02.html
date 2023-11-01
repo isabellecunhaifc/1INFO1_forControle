@@ -7,11 +7,18 @@
     */
 
     //Entrada
-
-
+    let frase = ["O rato roeu a roupa do rei de Roma"];
+    let vogais = ["a", "e", "i", "o", "u"]
+    let quantidade = 0;
+    const vogal = prompt('Informe uma vogal:').toLowerCase();
     //Processamento
-
+    for (let i = 0; i < frase.length; i++) {
+       if(frase[i] == vogais){
+        quantidade++
+       }
+    }
 
     //Saída
+    document.write(`Quantidade de vezes que a vogal ${vogal} apareceu: ${quantidade}`)
 
 </script>
